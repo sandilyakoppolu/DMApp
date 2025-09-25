@@ -1,0 +1,71 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: linear-gradient(135deg, #FFD700, #FF7F50, #FF4500); /* gold → orange → red */
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.login-form {
+  background: #fff8f0; /* soft warm background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(255, 140, 0, 0.3); /* subtle orange glow */
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #FF4500; /* strong red heading */
+  text-shadow: 1px 1px 2px #FFA500; /* gold-orange shadow */
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #FFA500; /* golden border */
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #FF6347; /* tomato red focus */
+  outline: none;
+  box-shadow: 0 0 5px #FFD700; /* subtle gold glow */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #FF6347; /* red-orange button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.login-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-form button:hover:not(:disabled) {
+  background: #FF4500; /* deeper red on hover */
+}
+
+.error-text {
+  color: #FF0000; /* bright red errors */
+  font-size: 14px;
+  margin-bottom: 10px;
+}
